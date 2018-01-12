@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="left_margin_quastions">16dp</dimen>
+    <dimen name="right_margin_quastions">16dp</dimen>
+    <dimen name="left_margin_answers">32dp</dimen>
+    <dimen name="top_margin_quastions">20dp</dimen>
+    <dimen name="button_margin_quastions">6dp</dimen>
+
+    <dimen name="left_margin_button_checkBox">280dp</dimen>
+
+    <dimen name="margin_between_draw_answers">7dp</dimen>
+
+    <dimen name="quastion_text_size">20sp</dimen>
+    <dimen name="answers_text_size">19sp</dimen>
+    <dimen name="legend">18sp</dimen>
+
+    <dimen name="margin_button">14dp</dimen>
+</resources>

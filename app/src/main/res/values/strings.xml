@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Christmas Quiz 1</string>
+
+    <string name="title">What do you know about Christmas?</string>
+
+    <string name="legend">The legend</string>
+    <string name="bauble">one-choice \n question</string>
+    <string name="gift">multiple choice \n question</string>
+    <string name="chain">write by yourself</string>
+
+
+    <string name="quastion_advent">1. When does advent begin?:</string>
+    <string name="ans1_advent"> 4 weeks befor Christams</string>
+    <string name="ans2_advent">1st of December</string>
+    <string name="ans3_advent">on the 4th Sunday before Christmas</string>
+    <string name="ans4_advent">6th of December</string>
+
+    <string name="quastion_eve">In which country the Christmas Eve is very solemnly celebrated: </string>
+    <string name="ans1_eve">Poland</string>
+    <string name="ans2_eve">Spain</string>
+    <string name="ans3_eve">Netherlands</string>
+    <string name="ans4_eve">Great Britain</string>
+
+    <string name="quastion_tablecloth">What is put under the tablecloth: </string>
+    <string name="ans1_tablecloth">twigs of a Christmas tree</string>
+    <string name="ans2_tablecloth">money</string>
+    <string name="ans3_tablecloth">angel\'s hair</string>
+    <string name="ans4_tablecloth">hay</string>
+
+    <string name="quastion_tree">3. From which age and where does the custom of a decorative Christmas tree come from:</string>
+    <string name="ans1_tree">Alsace (Germany), 16th Century</string>
+    <string name="ans2_tree">Ontario (Canada), 19th Century</string>
+    <string name="ans3_tree">Lapland (Northern Europe), 18th Century</string>
+    <string name="ans4_tree">Rome (in Italy), 15th Century</string>
+    <string name="ans1_tree_land">Alsace (Germany), \n16th Century</string>
+    <string name="ans2_tree_land">Ontario (Canada), \n19th Century</string>
+    <string name="ans3_tree_land">Lapland (Northern Europe), \n18th Century</string>
+    <string name="ans4_tree_land">Rome (in Italy), \n15th Century</string>
+
+    <string name="quastion_flower">What is the name of a popular Christmas green-reed flower:</string>
+    <string name="ans1_flower">Poinsettia</string>
+    <string name="ans2_flower">Christmas Rose</string>
+    <string name="ans3_flower">Bethlehem Flower</string>
+    <string name="ans4_flower">Kalanchoe</string>
+
+    <string name="quastion_saintNicolas">4. Where and in what age did Bishop Saint Nicholas live/work:</string>
+    <string name="ans1_saintNicolas">Lapland (Northern Europe) in the 5th Century</string>
+    <string name="ans2_saintNicolas">Rome (Italy) in the 3th Century</string>
+    <string name="ans3_saintNicolas"> Myra (Turkey) in the 4th Century</string>
+    <string name="ans4_saintNicolas">Gaul (Western Europe) in the 1th Century</string>
+    <string name="ans1_saintNicolas_land">Lapland (Northern Europe) \nin the 5th Century</string>
+    <string name="ans2_saintNicolas_land">Rome (Italy) \nin the 3th Century</string>
+    <string name="ans3_saintNicolas_land"> Myra (Turkey) \nin the 4th Century</string>
+    <string name="ans4_saintNicolas_land">Gaul (Western Europe) \nin the 1th Century</string>
+
+
+    <string name="quastion_wafer">2. In which country/countries is the custom of breaking the Christmas wafer on Christmas Eve:</string>
+    <string name="ans1_wafer">Slovenia</string>
+    <string name="ans2_wafer"> Poland</string>
+    <string name="ans3_wafer">Lithuania</string>
+    <string name="ans4_wafer">Spain</string>
+
+    <string name="quastion_crib">7. What characters should be included in the Christmas crib:</string>
+    <string name="ans1_crib">Baby Jesus</string>
+    <string name="ans2_crib">Mary</string>
+    <string name="ans3_crib">Joseph</string>
+    <string name="ans4_crib">Santa Claus </string>
+
+
+    <string name="quastion_SCLapland">5. Where does Santa Claus live today:</string>
+
+    <string name="quastion_SChelp">6. Who helps Santa Claus:</string>
+
+
+    <string name="button_result">show \n the result</string>
+    <string name="button_try_again">try\nagain</string>
+
+    <string name="littlePoints">You do not know much about Christmas. You received <xliff:g id="firstInt" example="3">%d</xliff:g> points out of <xliff:g id="seconInt" example="7">%d</xliff:g>. Learn a little, or you will not get Christmas gifts</string>
+    <string name="normalPoints">You know something about Christmas. You received <xliff:g id="firstInt" example="4">%d</xliff:g> points out of <xliff:g id="seconInt" example="7">%d</xliff:g>. Maybe you will get gifts from Santa Claus</string>
+    <string name="muchPoints">Congratulations!!! You know a lot about Christmas. You received <xliff:g id="firstInt" example="6">%d</xliff:g> points out of <xliff:g id="seconInt" example="7">%d</xliff:g>. You deserve a wonderful Christmas present</string>
+</resources>
+
