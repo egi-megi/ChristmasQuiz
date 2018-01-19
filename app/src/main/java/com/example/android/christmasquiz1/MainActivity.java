@@ -1,9 +1,13 @@
 package com.example.android.christmasquiz1;
 
 import android.app.Activity;
+import android.graphics.Typeface;
+import android.opengl.EGLExt;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -15,10 +19,41 @@ public class MainActivity extends AppCompatActivity {
     int maxHerePoints = 7;
 
 
+
+    void recurseChangeFont(View v) {
+        if (v instanceof ViewGroup) {
+            ViewGroup viewgroup= (ViewGroup) v;
+            for (int i=0;i<viewgroup.getChildCount();i++) {
+                View v1=viewgroup.getChildAt(i);
+                recurseChangeFont(v1);
+            }
+        } else {
+            Typeface font = Typeface.createFromAsset(getAssets(), "green_avocado.ttf");
+            if (v instanceof CheckBox) {
+                ((CheckBox) v).setTypeface(font);
+            }
+            if (v instanceof RadioButton) {
+                ((RadioButton) v).setTypeface(font);
+            }
+        }
+
+
+
+    }
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Typeface font = Typeface.createFromAsset(getAssets(), "green_avocado.ttf");
+
+
+        ViewGroup viewgroup=(ViewGroup)this.findViewById(android.R.id.content);
+        recurseChangeFont(viewgroup);
+
     }
 
     public int onRadioButtonClickedAdwent(View view) {

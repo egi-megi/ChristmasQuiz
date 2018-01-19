@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextAppearance"  parent="@android:style/TextAppearance.Small">
+        <item name="fontFamily">@font/green_avocado</item>
+    </style>
+
 </resources>

@@ -153,7 +153,7 @@
                 android:button="@drawable/radiodraw"
                 android:paddingLeft="@dimen/margin_between_draw_answers"
                 android:text="@string/ans1_advent"
-                android:fontFamily="@font/green_avocado"
+                android:textAppearance="@style/TextAppearance"
                 android:textColor="@color/quastionsColor"
                 android:textSize="@dimen/answers_text_size" />
 
