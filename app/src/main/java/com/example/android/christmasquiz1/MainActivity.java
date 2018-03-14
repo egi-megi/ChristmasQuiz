@@ -18,13 +18,13 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     int maxHerePoints = 7;
 
-
+// This is connected with display of font for all texts
 
     void recurseChangeFont(View v) {
         if (v instanceof ViewGroup) {
-            ViewGroup viewgroup= (ViewGroup) v;
-            for (int i=0;i<viewgroup.getChildCount();i++) {
-                View v1=viewgroup.getChildAt(i);
+            ViewGroup viewgroup = (ViewGroup) v;
+            for (int i = 0; i < viewgroup.getChildCount(); i++) {
+                View v1 = viewgroup.getChildAt(i);
                 recurseChangeFont(v1);
             }
         } else {
@@ -38,10 +38,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-
     }
 
-
+// This is connected with display of font for all texts
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +50,12 @@ public class MainActivity extends AppCompatActivity {
         Typeface font = Typeface.createFromAsset(getAssets(), "green_avocado.ttf");
 
 
-        ViewGroup viewgroup=(ViewGroup)this.findViewById(android.R.id.content);
+        ViewGroup viewgroup = (ViewGroup) this.findViewById(android.R.id.content);
         recurseChangeFont(viewgroup);
 
     }
 
+    // This method is for clicking RadioButton for question about Advent
     public int onRadioButtonClickedAdwent(View view) {
         // Is the button now checked?
 
@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         return sum;
     }
 
+    // This method is for clicking RadioButton for question about Christmas Tree
     public int onRadioButtonClickedTree(View view) {
         // Is the button now checked?
 
@@ -96,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
         return sumTree;
     }
 
+
+    // This method is for clicking RadioButton for question about Saint Nicolas
     public int onRadioButtonClickedSaintNicolas(View view) {
         // Is the button now checked?
 
@@ -116,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
         return sumSaintNicolas;
     }
 
+    // This method is for clicking CheckBoxes for question about wafer and Christmas Crip
     public int countButtonResult(View view) {
         int sumPoints = 0;
         CheckBox ans1WaferCheckBox = (CheckBox) findViewById(R.id.ans1_wafer_checkBox);
@@ -168,6 +172,9 @@ public class MainActivity extends AppCompatActivity {
         if (answerLapland.matches("Lapland")) {
             sumPoints = sumPoints + 1;
         }
+        if (answerLapland.matches("lapland")) {
+            sumPoints = sumPoints + 1;
+        }
 
         //Question where someone have to write the answer
         EditText writeWhoHelpEditText = (EditText) findViewById(R.id.editText_SChelp);
@@ -203,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
     //It is method for getting the String for the smallest number of points
     private String countPointsLittle(int firstInt, int secondInt) {
         String pointsLittle = getString(R.string.littlePoints, firstInt, secondInt);

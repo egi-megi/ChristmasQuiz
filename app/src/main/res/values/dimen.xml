@@ -1,17 +1,38 @@
 <resources>
+    <dimen name="top_margin">45dp</dimen>
+    <dimen name="top_margin_land">26dp</dimen>
     <dimen name="left_margin_quastions">16dp</dimen>
     <dimen name="right_margin_quastions">16dp</dimen>
     <dimen name="left_margin_answers">32dp</dimen>
     <dimen name="top_margin_quastions">20dp</dimen>
-    <dimen name="button_margin_quastions">6dp</dimen>
+    <dimen name="button_margin_quastions">20dp</dimen>
+
+    <dimen name="layout_width_left_CheckBox">250dp</dimen>
+
+    <dimen name="line_thickness">1dp</dimen>
 
     <dimen name="left_margin_button_checkBox">280dp</dimen>
+    <dimen name="height_checkbox">40dp</dimen>
 
     <dimen name="margin_between_draw_answers">7dp</dimen>
+    <dimen name="margin_between_draw_answers_bigger">20dp</dimen>
+    <dimen name="margin_bottom_between_answers">10dp</dimen>
 
+    <dimen name="text_size_title">30sp</dimen>
     <dimen name="quastion_text_size">20sp</dimen>
     <dimen name="answers_text_size">19sp</dimen>
     <dimen name="legend">18sp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+
+    <dimen name="margin_legend_left_image">16dp</dimen>
+    <dimen name="margin_legend_right_image">50dp</dimen>
+    <dimen name="bottom_margin_legend">10dp</dimen>
 
     <dimen name="margin_button">14dp</dimen>
+    <dimen name="margin_button_left">100dp</dimen>
+    <dimen name="margin_button_bottom">30dp</dimen>
+    <dimen name="padding_button_bottom">4dp</dimen>
+    <dimen name="padding_button_top_land">8dp</dimen>
+    <dimen name="margin_button_left_land">198dp</dimen>
+
 </resources>

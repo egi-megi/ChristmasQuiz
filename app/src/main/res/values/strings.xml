@@ -15,6 +15,7 @@
     <string name="ans2_advent">1st of December</string>
     <string name="ans3_advent">on the 4th Sunday before Christmas</string>
     <string name="ans4_advent">6th of December</string>
+    <string name="ans3_advent_land">on the 4th Sunday\nbefore Christmas</string>
 
     <string name="quastion_eve">In which country the Christmas Eve is very solemnly celebrated: </string>
     <string name="ans1_eve">Poland</string>
@@ -72,8 +73,9 @@
 
     <string name="quastion_SChelp">6. Who helps Santa Claus:</string>
 
+    <string name="empty_EditText">   </string>
 
-    <string name="button_result">show \n the result</string>
+    <string name="button_result">show\nresult</string>
     <string name="button_try_again">try\nagain</string>
 
     <string name="littlePoints">You do not know much about Christmas. You received <xliff:g id="firstInt" example="3">%d</xliff:g> points out of <xliff:g id="seconInt" example="7">%d</xliff:g>. Learn a little, or you will not get Christmas gifts</string>

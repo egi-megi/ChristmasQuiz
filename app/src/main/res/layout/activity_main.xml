@@ -12,35 +12,35 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_quastions"
-            android:layout_marginRight="@dimen/right_margin_quastions"
-            android:layout_marginTop="45dp"
-            android:text="@string/title"
+            android:layout_marginTop="@dimen/top_margin"
             android:fontFamily="@font/green_avocado"
+            android:text="@string/title"
             android:textAlignment="center"
             android:textColor="@color/quastionsColor"
-            android:textSize="30sp"
+            android:textSize="@dimen/text_size_title"
             android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="@dimen/top_margin_quastions"
+            android:layout_marginEnd="@dimen/left_margin_quastions"
             android:layout_marginLeft="@dimen/left_margin_quastions"
             android:layout_marginRight="@dimen/right_margin_quastions"
-            android:layout_marginTop="35dp"
+            android:layout_marginStart="@dimen/left_margin_quastions"
+            android:layout_marginTop="@dimen/left_margin_answers"
             android:orientation="vertical">
 
             <View
-                android:layout_width="350dp"
-                android:layout_height="1dp"
-                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thickness"
+                android:layout_marginBottom="@dimen/padding_button_bottom"
                 android:background="@color/quastionsColor" />
 
             <View
-                android:layout_width="350dp"
-                android:layout_height="1dp"
-                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thickness"
+                android:layout_marginBottom="@dimen/padding_button_bottom"
                 android:background="@color/quastionsColor" />
 
 
@@ -52,34 +52,28 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginLeft="@dimen/margin_legend_left_image"
+                    android:layout_marginStart="@dimen/margin_legend_left_image"
                     android:src="@drawable/bombka_mala_zlota" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    style="@style/Legend"
                     android:paddingLeft="@dimen/margin_between_draw_answers"
-                    android:text="@string/bauble"
-                    android:fontFamily="@font/green_avocado"
-                    android:textColor="@color/legendColor"
-                    android:textSize="@dimen/answers_text_size" />
+                    android:paddingStart="@dimen/margin_between_draw_answers"
+                    android:text="@string/bauble" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="@dimen/margin_legend_right_image"
+                    android:layout_marginStart="@dimen/margin_legend_right_image"
                     android:src="@drawable/prezent_zloty_zielony" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    style="@style/Legend"
                     android:paddingLeft="@dimen/margin_between_draw_answers"
-                    android:text="@string/gift"
-                    android:fontFamily="@font/green_avocado"
-                    android:textColor="@color/legendColor"
-                    android:textSize="@dimen/answers_text_size" />
+                    android:paddingStart="@dimen/margin_between_draw_answers"
+                    android:text="@string/gift" />
 
             </LinearLayout>
 
@@ -95,30 +89,27 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/left_margin_answers"
+                    android:layout_marginStart="@dimen/left_margin_answers"
                     android:src="@drawable/lancuch_maly" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:paddingLeft="20dp"
-                    android:text="@string/chain"
-                    android:fontFamily="@font/green_avocado"
-                    android:textColor="@color/legendColor"
-                    android:textSize="@dimen/answers_text_size" />
+                    style="@style/Legend"
+                    android:paddingLeft="@dimen/margin_between_draw_answers_bigger"
+                    android:paddingStart="@dimen/margin_between_draw_answers_bigger"
+                    android:text="@string/chain" />
 
             </LinearLayout>
 
             <View
-                android:layout_width="350dp"
-                android:layout_height="1dp"
-                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thickness"
+                android:layout_marginTop="@dimen/margin_between_draw_answers"
                 android:background="@color/quastionsColor" />
 
             <View
-                android:layout_width="350dp"
-                android:layout_height="1dp"
-                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thickness"
+                android:layout_marginTop="@dimen/padding_button_bottom"
                 android:background="@color/quastionsColor" />
 
         </LinearLayout>
@@ -126,17 +117,8 @@
 
         <TextView
             android:id="@+id/questionAdvent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/button_margin_quastions"
-            android:layout_marginLeft="@dimen/left_margin_quastions"
-            android:layout_marginRight="@dimen/right_margin_quastions"
-            android:layout_marginTop="@dimen/top_margin_quastions"
-            android:text="@string/quastion_advent"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/quastion_text_size"
-            android:textStyle="bold" />
+            style="@style/Question"
+            android:text="@string/quastion_advent" />
 
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -147,131 +129,73 @@
 
             <RadioButton
                 android:id="@+id/ans1Advent"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans1_advent"
-                android:textAppearance="@style/TextAppearance"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans1_advent" />
 
             <RadioButton
                 android:id="@+id/ans2Advent"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans2_advent"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans2_advent" />
 
             <RadioButton
                 android:id="@+id/ans3Advent"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans3_advent"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans3_advent" />
 
             <RadioButton
                 android:id="@+id/ans4Advent"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans4_advent"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans4_advent" />
         </RadioGroup>
 
 
         <TextView
             android:id="@+id/question_wafer_multi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/button_margin_quastions"
-            android:layout_marginLeft="@dimen/left_margin_quastions"
-            android:layout_marginRight="@dimen/right_margin_quastions"
-            android:layout_marginTop="@dimen/top_margin_quastions"
-            android:text="@string/quastion_wafer"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/quastion_text_size"
-            android:textStyle="bold" />
+            style="@style/Question"
+            android:text="@string/quastion_wafer" />
 
 
         <CheckBox
             android:id="@+id/ans1_wafer_checkBox"
+            style="@style/CheckBoxRadioButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_answers"
             android:button="@drawable/checkbox"
-            android:paddingLeft="@dimen/margin_between_draw_answers"
-            android:text="@string/ans1_wafer"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/answers_text_size" />
+            android:text="@string/ans1_wafer" />
 
         <CheckBox
             android:id="@+id/ans2_wafer_checkBox"
+            style="@style/CheckBoxRadioButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_answers"
             android:button="@drawable/checkbox"
-            android:paddingLeft="@dimen/margin_between_draw_answers"
-            android:text="@string/ans2_wafer"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/answers_text_size" />
+            android:text="@string/ans2_wafer" />
 
         <CheckBox
             android:id="@+id/ans3_wafer_checkBox"
+            style="@style/CheckBoxRadioButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_answers"
             android:button="@drawable/checkbox"
-            android:paddingLeft="@dimen/margin_between_draw_answers"
-            android:text="@string/ans3_wafer"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/answers_text_size" />
+            android:text="@string/ans3_wafer" />
 
         <CheckBox
             android:id="@+id/ans4_wafer_checkBox"
+            style="@style/CheckBoxRadioButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_answers"
             android:button="@drawable/checkbox"
-            android:paddingLeft="@dimen/margin_between_draw_answers"
-            android:text="@string/ans4_wafer"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/answers_text_size" />
+            android:text="@string/ans4_wafer" />
 
 
         <TextView
             android:id="@+id/questionTree"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/button_margin_quastions"
-            android:layout_marginLeft="@dimen/left_margin_quastions"
-            android:layout_marginRight="@dimen/right_margin_quastions"
-            android:layout_marginTop="@dimen/top_margin_quastions"
-            android:text="@string/quastion_tree"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/quastion_text_size"
-            android:textStyle="bold" />
+            style="@style/Question"
+            android:text="@string/quastion_tree" />
 
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -282,67 +206,38 @@
 
             <RadioButton
                 android:id="@+id/ans1Tree"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans1_tree"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans1_tree" />
 
             <RadioButton
                 android:id="@+id/ans2Tree"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans2_tree"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans2_tree" />
 
             <RadioButton
                 android:id="@+id/ans3Tree"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans3_tree"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans3_tree" />
 
             <RadioButton
                 android:id="@+id/ans4Tree"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans4_tree"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans4_tree" />
         </RadioGroup>
 
 
         <TextView
             android:id="@+id/questionSaintNicolas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/button_margin_quastions"
-            android:layout_marginLeft="@dimen/left_margin_quastions"
-            android:layout_marginRight="@dimen/right_margin_quastions"
-            android:layout_marginTop="@dimen/top_margin_quastions"
-            android:text="@string/quastion_saintNicolas"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/quastion_text_size"
-            android:textStyle="bold" />
+            style="@style/Question"
+            android:text="@string/quastion_saintNicolas" />
 
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -353,78 +248,43 @@
 
             <RadioButton
                 android:id="@+id/ans1saintNicolas"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans1_saintNicolas"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans1_saintNicolas" />
 
             <RadioButton
                 android:id="@+id/ans2saintNicolas"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans2_saintNicolas"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans2_saintNicolas" />
 
             <RadioButton
                 android:id="@+id/ans3saintNicolas"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans3_saintNicolas"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans3_saintNicolas" />
 
             <RadioButton
                 android:id="@+id/ans4saintNicolas"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/radiodraw"
-                android:paddingLeft="@dimen/margin_between_draw_answers"
-                android:text="@string/ans4_saintNicolas"
-                android:fontFamily="@font/green_avocado"
-                android:textColor="@color/quastionsColor"
-                android:textSize="@dimen/answers_text_size" />
+                android:text="@string/ans4_saintNicolas" />
         </RadioGroup>
 
 
         <TextView
             android:id="@+id/question_SCLapland_multi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/button_margin_quastions"
-            android:layout_marginLeft="@dimen/left_margin_quastions"
-            android:layout_marginRight="@dimen/right_margin_quastions"
-            android:layout_marginTop="@dimen/top_margin_quastions"
-            android:text="@string/quastion_SCLapland"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/quastion_text_size"
-            android:textStyle="bold" />
+            style="@style/Question"
+            android:text="@string/quastion_SCLapland" />
 
         <EditText
             android:id="@+id/editText_SCLapland"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_answers"
-            android:maxLength="10"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/quastion_text_size"
-            android:textStyle="italic" />
+            style="@style/EditText"
+            android:hint="@string/empty_EditText" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -435,135 +295,78 @@
 
         <TextView
             android:id="@+id/question_SChelp_multi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/button_margin_quastions"
-            android:layout_marginLeft="@dimen/left_margin_quastions"
-            android:layout_marginRight="@dimen/right_margin_quastions"
-            android:layout_marginTop="@dimen/top_margin_quastions"
-            android:text="@string/quastion_SChelp"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/quastion_text_size"
-            android:textStyle="bold" />
+            style="@style/Question"
+            android:text="@string/quastion_SChelp" />
 
         <EditText
             android:id="@+id/editText_SChelp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_answers"
-            android:hint=" "
-            android:maxLength="10"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/quastion_text_size"
-            android:textStyle="italic" />
+            style="@style/EditText"
+            android:hint="@string/empty_EditText" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/left_margin_answers"
+            android:layout_marginStart="@dimen/left_margin_answers"
             android:src="@drawable/lancuch_maly" />
 
 
         <TextView
             android:id="@+id/question_crib_multi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/button_margin_quastions"
-            android:layout_marginLeft="@dimen/left_margin_quastions"
-            android:layout_marginRight="@dimen/right_margin_quastions"
-            android:layout_marginTop="@dimen/top_margin_quastions"
-            android:text="@string/quastion_crib"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/quastion_text_size"
-            android:textStyle="bold" />
+            style="@style/Question"
+            android:text="@string/quastion_crib" />
 
 
         <CheckBox
             android:id="@+id/ans1_crib_checkBox"
+            style="@style/CheckBoxRadioButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_answers"
             android:button="@drawable/checkbox"
-            android:paddingLeft="@dimen/margin_between_draw_answers"
-            android:text="@string/ans1_crib"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/answers_text_size" />
+            android:text="@string/ans1_crib" />
 
         <CheckBox
             android:id="@+id/ans2_crib_checkBox"
+            style="@style/CheckBoxRadioButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_answers"
             android:button="@drawable/checkbox"
-            android:paddingLeft="@dimen/margin_between_draw_answers"
-            android:text="@string/ans2_crib"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/answers_text_size" />
+            android:text="@string/ans2_crib" />
 
         <CheckBox
             android:id="@+id/ans3_crib_checkBox"
+            style="@style/CheckBoxRadioButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_answers"
             android:button="@drawable/checkbox"
-            android:paddingLeft="@dimen/margin_between_draw_answers"
-            android:text="@string/ans3_crib"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/answers_text_size" />
+            android:text="@string/ans3_crib" />
 
         <CheckBox
             android:id="@+id/ans4_crib_checkBox"
+            style="@style/CheckBoxRadioButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/left_margin_answers"
             android:button="@drawable/checkbox"
-            android:paddingLeft="@dimen/margin_between_draw_answers"
-            android:text="@string/ans4_crib"
-            android:fontFamily="@font/green_avocado"
-            android:textColor="@color/quastionsColor"
-            android:textSize="@dimen/answers_text_size" />
+            android:text="@string/ans4_crib" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/left_margin_answers"
             android:layout_marginRight="@dimen/left_margin_answers"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/top_margin_quastions"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button_result"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Buttons"
                 android:background="@drawable/gradient"
                 android:onClick="buttonResult"
-                android:paddingLeft="@dimen/margin_button"
-                android:paddingRight="@dimen/margin_button"
-                android:paddingBottom="4dp"
                 android:text="@string/button_result"
-                android:fontFamily="@font/bunga_melati_putih"
-                android:textStyle="bold"
                 android:textColor="@color/background" />
 
             <Button
                 android:id="@+id/button_try_again"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp"
-                android:layout_marginLeft="120dp"
+                style="@style/Buttons"
                 android:background="@drawable/gradient"
                 android:onClick="buttonTryAgain"
-                android:paddingLeft="@dimen/margin_button"
-                android:paddingRight="@dimen/margin_button"
                 android:text="@string/button_try_again"
-                android:fontFamily="@font/bunga_melati_putih"
-                android:textStyle="bold"
                 android:textColor="@color/background" />
 
 
