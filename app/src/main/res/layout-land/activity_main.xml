@@ -222,13 +222,9 @@
             android:id="@+id/rgTree"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/left_margin_quastions"
+            android:layout_marginBottom="-50dp"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/ans1Tree"
@@ -244,27 +240,25 @@
                     android:button="@drawable/radiodraw"
                     android:text="@string/ans2_tree_land" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/ans3Tree"
                     style="@style/CheckBoxRadioButton"
                     android:layout_width="@dimen/layout_width_left_CheckBox"
                     android:button="@drawable/radiodraw"
-                    android:text="@string/ans3_tree_land" />
+                    android:text="@string/ans3_tree_land"
+                    android:layout_marginTop="-105dp"
+                    android:layout_marginLeft="310dp"/>
 
                 <RadioButton
                     android:id="@+id/ans4Tree"
                     style="@style/CheckBoxRadioButton"
                     android:layout_width="wrap_content"
                     android:button="@drawable/radiodraw"
-                    android:text="@string/ans4_tree_land" />
-            </LinearLayout>
+                    android:text="@string/ans4_tree_land"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="310dp"/>
+
         </RadioGroup>
 
         <TextView
