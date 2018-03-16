@@ -131,19 +131,10 @@ public class MainActivity extends AppCompatActivity {
         boolean checkedAns3WaferCheckBox = ans3WaferCheckBox.isChecked();
         boolean checkedAns4WaferCheckBox = ans4WaferCheckBox.isChecked();
 
-        // Check which CheckBox was clicked and sum points
-        if (ans1WaferCheckBox.isChecked()) {
-            sumPoints = sumPoints + 0;
-        }
-        // Sum points only if CheckBox 2 and CheckBox 3 is checked
-        if (ans2WaferCheckBox.isChecked() && ans3WaferCheckBox.isChecked()) {
+        // Check which CheckBox was clicked and sum points only if CheckBox 2 and CheckBox 3 is checked
+        if (ans2WaferCheckBox.isChecked() && ans3WaferCheckBox.isChecked() && (!ans1WaferCheckBox.isChecked()) && (!ans4WaferCheckBox.isChecked())) {
             sumPoints = sumPoints + 1;
         }
-
-        if (ans4WaferCheckBox.isChecked()) {
-            sumPoints = sumPoints + 0;
-        } else
-            sumPoints = sumPoints + 0;
 
 
         CheckBox ans1CripCheckBox = (CheckBox) findViewById(R.id.ans1_crib_checkBox);
@@ -155,16 +146,11 @@ public class MainActivity extends AppCompatActivity {
         boolean checkedAns3CripCheckBox = ans3CripCheckBox.isChecked();
         boolean checkedAns4WCripCheckBox = ans4CripCheckBox.isChecked();
 
-        // Check which CheckBox was clicked and sum points
-        // Sum points only if CheckBox 1 and CheckBox 2 and CheckBox 3 is checked
-        if (ans1CripCheckBox.isChecked() && ans2CripCheckBox.isChecked() && ans3CripCheckBox.isChecked()) {
+        // Check which CheckBox was clicked and sum points only if CheckBox 1 and CheckBox 2 and CheckBox 3 is checked
+        if (ans1CripCheckBox.isChecked() && ans2CripCheckBox.isChecked() && ans3CripCheckBox.isChecked() && (!ans4CripCheckBox.isChecked())) {
             sumPoints = sumPoints + 1;
         }
 
-        if (ans4CripCheckBox.isChecked()) {
-            sumPoints = sumPoints + 0;
-        } else
-            sumPoints = sumPoints + 0;
 
         //Question where someone have to write the answer
         EditText writeLaplandEditText = (EditText) findViewById(R.id.editText_SCLapland);
