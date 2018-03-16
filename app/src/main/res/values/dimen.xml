@@ -6,6 +6,9 @@
     <dimen name="left_margin_answers">32dp</dimen>
     <dimen name="top_margin_quastions">20dp</dimen>
     <dimen name="button_margin_quastions">20dp</dimen>
+    <dimen name="margin_bottom_radioButton">-46dp</dimen>
+    <dimen name="margin_left_radioButton">310dp</dimen>
+    <dimen name="margin_top_radioButton">-101.2dp</dimen>
 
     <dimen name="layout_width_left_CheckBox">250dp</dimen>
 

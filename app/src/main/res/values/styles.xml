@@ -39,7 +39,6 @@
     <!-- CheckBox's and RadioButton's style-->
     <style name="CheckBoxRadioButton">
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/left_margin_answers</item>
         <item name="android:paddingLeft">@dimen/margin_between_draw_answers</item>
         <item name="android:layout_marginBottom">@dimen/margin_bottom_between_answers</item>
         <item name="android:fontFamily">@font/green_avocado</item>

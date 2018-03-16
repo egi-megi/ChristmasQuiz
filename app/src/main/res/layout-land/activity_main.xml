@@ -20,6 +20,8 @@
             android:textSize="@dimen/text_size_title"
             android:textStyle="bold" />
 
+
+        <!--The legend with lines above and below the legend-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,7 +102,7 @@
 
         </LinearLayout>
 
-
+        <!--Questions with answers-->
         <TextView
             android:id="@+id/questionAdvent"
             style="@style/Question"
@@ -111,49 +113,44 @@
             android:id="@+id/rgAdvent"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_radioButton"
             android:orientation="vertical">
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/ans1Advent"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="@dimen/layout_width_left_CheckBox"
+                android:layout_marginLeft="@dimen/left_margin_answers"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans1_advent" />
 
-                <RadioButton
-                    android:id="@+id/ans1Advent"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="@dimen/layout_width_left_CheckBox"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans1_advent" />
-
-                <RadioButton
-                    android:id="@+id/ans2Advent"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="wrap_content"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans2_advent" />
-
-    </LinearLayout>
-
-            <LinearLayout
+            <RadioButton
+                android:id="@+id/ans2Advent"
+                style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginLeft="@dimen/left_margin_answers"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans2_advent" />
 
-                <RadioButton
-                    android:id="@+id/ans3Advent"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="@dimen/layout_width_left_CheckBox"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans3_advent_land" />
+            <!--Here is minus top margin and very big left margin to have a 2 columns and 2 rows of Radio Buttons-->
+            <RadioButton
+                android:id="@+id/ans3Advent"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="@dimen/layout_width_left_CheckBox"
+                android:layout_marginLeft="@dimen/margin_left_radioButton"
+                android:layout_marginTop="@dimen/margin_top_radioButton"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans3_advent_land" />
 
-                <RadioButton
-                    android:id="@+id/ans4Advent"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="wrap_content"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans4_advent" />
+            <!--Here is very big left margin (the same as above) to have a 2 columns and 2 rows of Radio Buttons-->
+            <RadioButton
+                android:id="@+id/ans4Advent"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_radioButton"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans4_advent" />
 
-            </LinearLayout>
         </RadioGroup>
 
 
@@ -177,6 +174,7 @@
                     android:id="@+id/ans1_wafer_checkBox"
                     style="@style/CheckBoxRadioButton"
                     android:layout_width="@dimen/layout_width_left_CheckBox"
+                    android:layout_marginLeft="@dimen/left_margin_answers"
                     android:button="@drawable/checkbox"
                     android:text="@string/ans1_wafer" />
 
@@ -184,6 +182,7 @@
                     android:id="@+id/ans2_wafer_checkBox"
                     style="@style/CheckBoxRadioButton"
                     android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/left_margin_answers"
                     android:button="@drawable/checkbox"
                     android:text="@string/ans2_wafer" />
 
@@ -198,6 +197,7 @@
                     android:id="@+id/ans3_wafer_checkBox"
                     style="@style/CheckBoxRadioButton"
                     android:layout_width="@dimen/layout_width_left_CheckBox"
+                    android:layout_marginLeft="@dimen/left_margin_answers"
                     android:button="@drawable/checkbox"
                     android:text="@string/ans3_wafer" />
 
@@ -205,6 +205,7 @@
                     android:id="@+id/ans4_wafer_checkBox"
                     style="@style/CheckBoxRadioButton"
                     android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/left_margin_answers"
                     android:button="@drawable/checkbox"
                     android:text="@string/ans4_wafer" />
 
@@ -222,42 +223,43 @@
             android:id="@+id/rgTree"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="-50dp"
+            android:layout_marginBottom="@dimen/margin_bottom_radioButton"
             android:orientation="vertical">
 
 
-                <RadioButton
-                    android:id="@+id/ans1Tree"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="@dimen/layout_width_left_CheckBox"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans1_tree_land" />
+            <RadioButton
+                android:id="@+id/ans1Tree"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="@dimen/layout_width_left_CheckBox"
+                android:layout_marginLeft="@dimen/left_margin_answers"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans1_tree_land" />
 
-                <RadioButton
-                    android:id="@+id/ans2Tree"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="wrap_content"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans2_tree_land" />
+            <RadioButton
+                android:id="@+id/ans2Tree"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin_answers"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans2_tree_land" />
 
 
-                <RadioButton
-                    android:id="@+id/ans3Tree"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="@dimen/layout_width_left_CheckBox"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans3_tree_land"
-                    android:layout_marginTop="-105dp"
-                    android:layout_marginLeft="310dp"/>
+            <RadioButton
+                android:id="@+id/ans3Tree"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="@dimen/layout_width_left_CheckBox"
+                android:layout_marginLeft="@dimen/margin_left_radioButton"
+                android:layout_marginTop="@dimen/margin_top_radioButton"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans3_tree_land" />
 
-                <RadioButton
-                    android:id="@+id/ans4Tree"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="wrap_content"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans4_tree_land"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginLeft="310dp"/>
+            <RadioButton
+                android:id="@+id/ans4Tree"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_radioButton"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans4_tree_land" />
 
         </RadioGroup>
 
@@ -271,49 +273,41 @@
             android:id="@+id/rgSaintNicolas"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/left_margin_quastions"
+            android:layout_marginBottom="@dimen/margin_bottom_radioButton"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/ans1saintNicolas"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="@dimen/layout_width_left_CheckBox"
+                android:layout_marginLeft="@dimen/left_margin_answers"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans1_saintNicolas_land" />
 
-                <RadioButton
-                    android:id="@+id/ans1saintNicolas"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="@dimen/layout_width_left_CheckBox"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans1_saintNicolas_land" />
+            <RadioButton
+                android:id="@+id/ans2saintNicolas"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin_answers"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans2_saintNicolas_land" />
 
-                <RadioButton
-                    android:id="@+id/ans2saintNicolas"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="wrap_content"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans2_saintNicolas_land" />
+            <RadioButton
+                android:id="@+id/ans3saintNicolas"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="@dimen/layout_width_left_CheckBox"
+                android:layout_marginLeft="@dimen/margin_left_radioButton"
+                android:layout_marginTop="@dimen/margin_top_radioButton"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans3_saintNicolas_land" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/ans3saintNicolas"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="@dimen/layout_width_left_CheckBox"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans3_saintNicolas_land" />
-
-                <RadioButton
-                    android:id="@+id/ans4saintNicolas"
-                    style="@style/CheckBoxRadioButton"
-                    android:layout_width="wrap_content"
-                    android:button="@drawable/radiodraw"
-                    android:text="@string/ans4_saintNicolas_land" />
-            </LinearLayout>
+            <RadioButton
+                android:id="@+id/ans4saintNicolas"
+                style="@style/CheckBoxRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_radioButton"
+                android:button="@drawable/radiodraw"
+                android:text="@string/ans4_saintNicolas_land" />
         </RadioGroup>
 
 
@@ -367,6 +361,7 @@
                 android:id="@+id/ans1_crib_checkBox"
                 style="@style/CheckBoxRadioButton"
                 android:layout_width="@dimen/layout_width_left_CheckBox"
+                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/checkbox"
                 android:text="@string/ans1_crib" />
 
@@ -374,6 +369,7 @@
                 android:id="@+id/ans2_crib_checkBox"
                 style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/checkbox"
                 android:text="@string/ans2_crib" />
 
@@ -388,6 +384,7 @@
                 android:id="@+id/ans3_crib_checkBox"
                 style="@style/CheckBoxRadioButton"
                 android:layout_width="@dimen/layout_width_left_CheckBox"
+                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/checkbox"
                 android:text="@string/ans3_crib" />
 
@@ -395,6 +392,7 @@
                 android:id="@+id/ans4_crib_checkBox"
                 style="@style/CheckBoxRadioButton"
                 android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin_answers"
                 android:button="@drawable/checkbox"
                 android:text="@string/ans4_crib" />
 
@@ -409,6 +407,7 @@
             android:layout_marginTop="@dimen/top_margin_quastions"
             android:orientation="horizontal">
 
+            <!--Button couting points-->
             <Button
                 android:id="@+id/button_result"
                 style="@style/Buttons"
@@ -417,6 +416,7 @@
                 android:text="@string/button_result"
                 android:textColor="@color/background" />
 
+            <!--Butoon reseting all answers-->
             <Button
                 android:id="@+id/button_try_again"
                 style="@style/Buttons"
