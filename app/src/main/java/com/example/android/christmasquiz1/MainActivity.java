@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // This method is for clicking CheckBoxes for question about wafer and Christmas Crip
-    public int countButtonResult(View view) {
+    public int countButtonResultForCheckBoxAndForEditText(View view) {
         int sumPoints = 0;
         CheckBox ans1WaferCheckBox = (CheckBox) findViewById(R.id.ans1_wafer_checkBox);
         CheckBox ans2WaferCheckBox = (CheckBox) findViewById(R.id.ans2_wafer_checkBox);
@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
     //Here is write what is the the range of points for different texts displayed when the button of "Show the results" is clicked
     public void buttonResult(View view) {
         int allPoints = 0;
-        allPoints = allPoints + countButtonResult(view) + onRadioButtonClickedSaintNicolas(view) + onRadioButtonClickedTree(view) + onRadioButtonClickedAdwent(view);
+        allPoints = allPoints + countButtonResultForCheckBoxAndForEditText(view) + onRadioButtonClickedSaintNicolas(view) + onRadioButtonClickedTree(view) + onRadioButtonClickedAdwent(view);
 
         if (allPoints < 4) {
             displayPointsLittle(countPointsLittle(allPoints, maxHerePoints));
